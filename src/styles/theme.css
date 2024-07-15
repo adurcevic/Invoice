@@ -1,0 +1,26 @@
+/****** colors ******/
+$color-primary-alpha: #7c5dfa;
+$color-primary-beta: #9277ff;
+$color-primary-gamma: #7e88c3;
+$color-primary-delta: #dfe3fa;
+$color-primary-epsilon: #888eb0;
+$color-primary-zeta: #858bb2;
+$color-primary-eta: #494e6e;
+
+$color-secondary-alpha: #1e2139;
+$color-secondary-beta: #252945;
+$color-secondary-gamma: #0c0e16;
+$color-secondary-delta: #141625;
+$color-secondary-epsilon: #373b53;
+
+$color-tertiary-alpha: #ec5757;
+$color-tertiary-beta: #ff9797;
+$color-tertiary-gamma: #f8f8fb;
+$color-tertiary-delta: #33d69f;
+$color-tertiary-zeta: #ff8f00;
+
+$color-white: #fff;
+$color-black: #000;
+
+/****** fonts ******/
+$font-spartan: 'Spartan', sans-serif;

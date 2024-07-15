@@ -1,0 +1,28 @@
+$bs-sm: 576px;
+$bs-md: 768px;
+$bs-lg: 1024px;
+$bs-xl: 1300px;
+
+@define-mixin tablet-small {
+  @media only screen and (min-width: $bs-sm) {
+    @mixin-content;
+  }
+}
+
+@define-mixin tablet {
+  @media only screen and (min-width: $bs-md) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media only screen and (min-width: $bs-lg) {
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop-large {
+  @media only screen and (min-width: $bs-xl) {
+    @mixin-content;
+  }
+}
