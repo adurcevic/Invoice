@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import '@/styles/global.css'
 import 'virtual:svg-icons-register'
 
 import App from './App.vue'
