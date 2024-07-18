@@ -1,6 +1,12 @@
 @use '../variables' as *;
 
 :root {
+  --color-btn-bg-alpha: #{$color-purple-epsilon};
+  --color-btn-bg-beta: #{$color-purple-delta};
+  --color-btn-bg-gamma: #{$color-grey-beta};
+  --color-btn-txt-alpha: #{$color-purple-gamma};
+  --color-btn-txt-beta: #{$color-purple-zeta};
+
   --color-bg-alpha: #{$color-tertiary-gamma};
   --color-bg-beta: #{$color-secondary-epsilon};
   --color-bg-gamma: #{$color-white};
@@ -15,6 +21,12 @@
 }
 
 [theme='dark'] {
+  --color-btn-bg-alpha: #{$color-blue-alpha};
+  --color-btn-bg-beta: #{$color-white};
+  --color-btn-bg-gamma: #{$color-grey-gamma};
+  --color-btn-txt-alpha: #{$color-purple-delta};
+  --color-btn-txt-beta: #{$color-purple-delta};
+
   --color-bg-alpha: #{$color-secondary-delta};
   --color-bg-beta: #{$color-secondary-alpha};
   --color-bg-gamma: #{$color-secondary-alpha};
