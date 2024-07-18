@@ -1,4 +1,4 @@
-@import './index.css';
+@use '../variables' as *;
 
 :root {
   --color-bg-alpha: #{$color-tertiary-gamma};
@@ -28,68 +28,10 @@
   --color-shadow-alpha: #{$color-secondary-alpha};
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
 html {
   font-family: $font-spartan;
 }
 
 body {
   background-color: var(--color-bg-alpha);
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img,
-picture {
-  height: auto;
-  width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background-color: unset;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }

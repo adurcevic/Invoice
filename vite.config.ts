@@ -6,8 +6,6 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { visualizer } from 'rollup-plugin-visualizer'
 import legacy from '@vitejs/plugin-legacy'
 import preset from 'postcss-preset-env'
-import vars from 'postcss-simple-vars'
-import mixins from 'postcss-mixins'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,7 +20,7 @@ export default defineConfig({
   ],
   css: {
     postcss: {
-      plugins: [mixins(), preset(), vars()]
+      plugins: [preset()]
     }
   },
   server: {

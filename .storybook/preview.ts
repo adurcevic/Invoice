@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/vue3'
-import '@/styles/global.css'
+import '@/styles/app.scss'
 import 'virtual:svg-icons-register'
 
 const preview: Preview = {
