@@ -1,9 +1,16 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution');
+require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   root: true,
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/eslint-config-typescript', '@vue/eslint-config-prettier/skip-formatting', 'plugin:vuejs-accessibility/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/eslint-config-typescript',
+    '@vue/eslint-config-prettier/skip-formatting',
+    'plugin:vuejs-accessibility/recommended',
+    'plugin:storybook/recommended'
+  ],
   parserOptions: {
     ecmaVersion: 'latest'
   },
@@ -21,6 +28,7 @@ module.exports = {
         ignoreRestSiblings: true
       }
     ],
+    'vue/enforce-style-attribute': ['error', { allow: ['scoped'] }],
     'vuejs-accessibility/label-has-for': [
       'error',
       {
@@ -30,4 +38,4 @@ module.exports = {
       }
     ]
   }
-};
+}
